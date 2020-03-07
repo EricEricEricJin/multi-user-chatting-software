@@ -83,6 +83,7 @@ class clientCmdline:
             elif command == "exit":
                 self._send("exit".encode("utf-8"))
                 self.thread_continue = False
+                sleep(0.5)
                 exit()
                     
             else:
