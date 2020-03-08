@@ -81,9 +81,10 @@ class clientCmdline:
                 else:
                     print("Login first")
             elif command == "exit":
-                self._send("exit".encode("utf-8"))
+
                 self.thread_continue = False
                 sleep(0.5)
+                self._send("exit".encode("utf-8"))
                 exit()
                     
             else:
